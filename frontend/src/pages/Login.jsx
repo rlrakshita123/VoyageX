@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const location = useLocation();
@@ -16,17 +17,22 @@ const Login = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   setError("");
+  setLoading(true);
 
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/auth/login`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const res = await fetch(
+      `${import.meta.env.VITE_API_BASE_URL}/api/v1/auth/login`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    );
 
     const data = await res.json();
 
     if (!res.ok) {
+      setLoading(false);
       return setError(data.error || "Login failed");
     }
 
@@ -37,8 +43,11 @@ const Login = () => {
     navigate(redirectTo);
   } catch {
     setError("Server error");
+  } finally {
+    setLoading(false);
   }
 };
+
 
   return (
     <div className="max-w-md mx-auto mt-20 p-6 shadow-lg rounded-xl">
@@ -65,9 +74,15 @@ const Login = () => {
           onChange={handleChange}
         />
 
-        <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
-          Login
+        <button
+          disabled={loading}
+          className={`w-full py-2 rounded text-white transition
+            ${loading ? "bg-blue-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"}
+          `}
+        >
+          {loading ? "Logging in..." : "Login"}
         </button>
+
 
         <div className="text-center mt-4 text-sm text-gray-600">
   Don't have an account?{" "}

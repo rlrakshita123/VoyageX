@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 const Signup = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -20,30 +21,37 @@ const Signup = () => {
   const handleSubmit = async (e) => {
   e.preventDefault();
   setError("");
+  setLoading(true);
 
   try {
-    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/auth/signup`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const res = await fetch(
+      `${import.meta.env.VITE_API_BASE_URL}/api/v1/auth/signup`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    );
 
     const data = await res.json();
 
     if (!res.ok) {
+      setLoading(false);
       return setError(data.error || "Signup failed");
     }
 
     saveToken(data.token);
     saveUser(data.user);
 
-    // redirect after signup
     const redirectTo = location.state?.from || "/search";
     navigate(redirectTo);
   } catch (err) {
     setError("Server error");
+  } finally {
+    setLoading(false);
   }
 };
+
 
 
   return (
@@ -79,9 +87,15 @@ const Signup = () => {
           onChange={handleChange}
         />
 
-        <button className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">
-          Create Account
+        <button
+          disabled={loading}
+          className={`w-full py-2 rounded text-white transition
+            ${loading ? "bg-green-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600"}
+          `}
+        >
+          {loading ? "Creating account..." : "Create Account"}
         </button>
+
 
         <div className="text-center mt-4 text-sm text-gray-600">
           Already have an account?{" "}
