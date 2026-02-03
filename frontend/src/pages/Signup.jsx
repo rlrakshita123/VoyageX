@@ -48,7 +48,7 @@ const Signup = () => {
 
   return (
     <div className="max-w-md mx-auto mt-20 p-6 shadow-lg rounded-xl">
-      <h2 className="text-2xl font-bold text-center mb-4">Sign Up</h2>
+      <h2 className="text-2xl font-bold text-center text-white mb-4">Sign Up</h2>
 
       {error && <div className="text-red-500 text-center">{error}</div>}
 
