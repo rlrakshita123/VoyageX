@@ -20,7 +20,7 @@ const RescheduleTrip = () => {
     const fetchTrip = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/v1/trips/${tripId}`,
+          `${import.meta.env.VITE_API_BASE_URL}/api/v1/trips/${tripId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ const RescheduleTrip = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/trips/${tripId}`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/v1/trips/${tripId}`,
         {
           method: "PUT",
           headers: {

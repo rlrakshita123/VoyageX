@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [trips, setTrips] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/v1/trips/my", {
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/trips/my`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -26,7 +26,7 @@ const Dashboard = () => {
   const handleDelete = async (id) => {
   if (!window.confirm("Are you sure you want to delete this trip?")) return;
 
-  await fetch(`http://localhost:5000/api/v1/trips/${id}`, {
+  await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/trips/${id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,

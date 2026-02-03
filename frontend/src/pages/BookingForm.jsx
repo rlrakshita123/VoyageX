@@ -50,7 +50,7 @@ useEffect(() => {
   setLoading(true);
 
   try {
-    const res = await fetch("http://localhost:5000/api/v1/trips", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/v1/trips`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -197,17 +197,17 @@ useEffect(() => {
           placeholder="Any special requests..."
         />
       </div>
-<button
-  type="submit"
-  disabled={loading}
-  className={`w-full py-2 rounded transition ${
-    loading
-      ? "bg-gray-400 cursor-not-allowed"
-      : "bg-blue-500 hover:bg-blue-600 text-white"
-  }`}
->
-  {loading ? "Booking..." : "Submit Booking"}
-</button>
+      <button
+        type="submit"
+        disabled={loading}
+        className={`w-full py-2 rounded transition ${
+          loading
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-blue-500 hover:bg-blue-600 text-white"
+        }`}
+      >
+        {loading ? "Booking..." : "Submit Booking"}
+      </button>
 
 
     </form>
