@@ -1,0 +1,474 @@
+
+[
+  {
+    "id": "1",
+    "name": "Swiss Alps",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/ad/e9/48/ade94889319475e835f26231f1e490dd.jpg",
+    "shortDesc": "Gorgeous snow-covered peaks and scenic views.",
+    "details": "The Swiss Alps offer breathtaking panoramas, pristine hiking trails, alpine meadows, and world-class skiing. Visitors can enjoy cable car rides, scenic trains, and cozy mountain lodges.",
+    "highlights": [
+      "Snow-capped peaks",
+      "Scenic hiking trails",
+      "Luxury alpine stays",
+      "Cable car experiences"
+    ],
+    "duration": "5–7 days",
+    "price": "₹45,000 – ₹85,000"
+  },
+  {
+    "id": "2",
+    "name": "Himalayas",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/736x/7e/43/ad/7e43adc06c1cb8353e385e87afb51a2e.jpg",
+    "shortDesc": "Majestic peaks and spiritual journeys.",
+    "details": "The Himalayas span several countries and offer diverse experiences — from spiritual retreats to challenging treks. Great for adventure, reflection, and culture.",
+    "highlights": [
+      "World’s highest peaks",
+      "Meditation & culture",
+      "Trekking routes",
+      "Scenic landscapes"
+    ],
+    "duration": "7–10 days",
+    "price": "₹35,000 – ₹70,000"
+  },
+  {
+    "id": "3",
+    "name": "Bali Beach",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/22/90/c7/2290c7b4cc95e4decab973ca8006f6ec.jpg",
+    "shortDesc": "Sunny beaches with vibrant culture.",
+    "details": "Bali is known for its beautiful beaches, tropical landscapes, cultural temples, and vibrant nightlife. A perfect mix of relaxation and adventure.",
+    "highlights": [
+      "Surfing & watersports",
+      "Traditional Balinese culture",
+      "Tropical sunsets",
+      "Beach resorts"
+    ],
+    "duration": "4–6 days",
+    "price": "₹25,000 – ₹55,000"
+  },
+  {
+    "id": "4",
+    "name": "Maldives",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/f3/57/b3/f357b318d88c1515a895cd20a92d2295.jpg",
+    "shortDesc": "Crystal waters and serene island life.",
+    "details": "The Maldives offer pristine beaches, crystal-clear waters, luxury resorts, and amazing marine life. Ideal for romantic getaways and peaceful retreats.",
+    "highlights": [
+      "Overwater villas",
+      "Snorkelling & diving",
+      "Private island resorts",
+      "Sunset cruises"
+    ],
+    "duration": "3–5 days",
+    "price": "₹65,000 – ₹1,20,000"
+  },
+  {
+    "id": "5",
+    "name": "Paris City",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/21/06/55/2106558ee01ba951864f63464573f2b2.jpg",
+    "shortDesc": "Romantic boulevards and historic charm.",
+    "details": "Paris, the city of lights, blends history, art, fashion, and cuisine. Visit museums, stroll along the Seine, and enjoy world-class gastronomy.",
+    "highlights": [
+      "Eiffel Tower",
+      "World-class museums",
+      "Seine River cruise",
+      "Café culture"
+    ],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹90,000"
+  },
+  {
+    "id": "6",
+    "name": "Tokyo City",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/29/87/73/298773f2a7a996e304175943c6863847.jpg",
+    "shortDesc": "Modern streets and traditional gardens.",
+    "details": "Tokyo mixes ultra-modern skyscrapers, neon lights, and ancient temples. Experience unique culture, cuisine, and innovation.",
+    "highlights": [
+      "Shibuya Crossing",
+      "Traditional temples",
+      "Modern architecture",
+      "Japanese cuisine"
+    ],
+    "duration": "5–7 days",
+    "price": "₹50,000 – ₹95,000"
+  },
+  {
+    "id": "7",
+    "name": "Santorini",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/04/4a/3f/044a3f94e6b1694afef5e52d5603bec0.jpg",
+    "shortDesc": "White houses and blue domes by the sea.",
+    "details": "Santorini is famous for its dramatic cliffs, whitewashed buildings, and stunning sunsets over the Aegean Sea.",
+    "highlights": ["Sunset views", "Cliffside villages", "Volcanic beaches", "Greek cuisine"],
+    "duration": "3–5 days",
+    "price": "₹45,000 – ₹80,000"
+  },
+  {
+    "id": "8",
+    "name": "New York City",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/d8/bc/1c/d8bc1c7442ed4f4054f26cec70e61a39.jpg",
+    "shortDesc": "The city that never sleeps.",
+    "details": "New York City offers iconic landmarks, diverse neighborhoods, Broadway shows, and global cuisine.",
+    "highlights": ["Times Square", "Central Park", "Broadway", "Statue of Liberty"],
+    "duration": "5–7 days",
+    "price": "₹70,000 – ₹1,10,000"
+  },
+  {
+    "id": "9",
+    "name": "Dubai",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/73/03/19/73031945131dbdae583c2d989c192aee.jpg",
+    "shortDesc": "Luxury, skyscrapers, and desert adventures.",
+    "details": "Dubai is known for futuristic architecture, luxury shopping, desert safaris, and iconic landmarks.",
+    "highlights": ["Burj Khalifa", "Desert safari", "Luxury malls", "Palm Islands"],
+    "duration": "4–6 days",
+    "price": "₹40,000 – ₹75,000"
+  },
+  {
+    "id": "10",
+    "name": "Goa",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/51/6d/8b/516d8b4f20c9fbd30ede56001fc907ab.jpg",
+    "shortDesc": "Laid-back beaches and vibrant nightlife.",
+    "details": "Goa offers beautiful beaches, Portuguese heritage, seafood, and a lively nightlife scene.",
+    "highlights": ["Beach parties", "Seafood", "Water sports", "Old churches"],
+    "duration": "3–5 days",
+    "price": "₹15,000 – ₹30,000"
+  },
+  {
+    "id": "11",
+    "name": "Manali",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/2d/91/5d/2d915d8e2191adfb515d1c7e99811038.jpg",
+    "shortDesc": "Snowy peaks and adventure sports.",
+    "details": "Manali is a popular hill station offering snow views, trekking, skiing, and scenic valleys.",
+    "highlights": ["Snow activities", "Solang Valley", "Rohtang Pass", "River rafting"],
+    "duration": "4–6 days",
+    "price": "₹18,000 – ₹35,000"
+  },
+  {
+    "id": "12",
+    "name": "Kyoto",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/55/c3/e9/55c3e93c2b108778dfc86915968f10bc.jpg",
+    "shortDesc": "Temples, traditions, and cherry blossoms.",
+    "details": "Kyoto preserves traditional Japanese culture with temples, shrines, gardens, and festivals.",
+    "highlights": ["Cherry blossoms", "Ancient temples", "Tea ceremonies", "Geisha culture"],
+    "duration": "4–6 days",
+    "price": "₹45,000 – ₹80,000"
+  },
+  {
+    "id": "13",
+    "name": "Leh Ladakh",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/89/15/f0/8915f033e6629c89e559b8a0a3f5bc19.jpg",
+    "shortDesc": "High-altitude deserts and monasteries.",
+    "details": "Ladakh offers dramatic landscapes, Buddhist monasteries, and thrilling road trips.",
+    "highlights": ["Pangong Lake", "Monasteries", "Mountain passes", "Bike trips"],
+    "duration": "6–8 days",
+    "price": "₹30,000 – ₹55,000"
+  },
+  {
+    "id": "14",
+    "name": "Rome",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/31/bc/52/31bc52ee9a8a14d88b49d8696c5fbdbe.jpg",
+    "shortDesc": "Ancient history and Italian charm.",
+    "details": "Rome is a living museum with ancient ruins, art, architecture, and delicious cuisine.",
+    "highlights": ["Colosseum", "Vatican City", "Roman ruins", "Italian food"],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹90,000"
+  },
+  {
+    "id": "15",
+    "name": "Phuket",
+    "type": "beach",
+    "image": "https://i.pinimg.com/1200x/70/73/27/707327c07ff1a9666bb6eaa8b1cc279b.jpg",
+    "shortDesc": "Tropical beaches and island hopping.",
+    "details": "Phuket is Thailand’s largest island, offering beaches, nightlife, and nearby islands.",
+    "highlights": ["Island hopping", "Beaches", "Night markets", "Snorkeling"],
+    "duration": "4–6 days",
+    "price": "₹30,000 – ₹55,000"
+  },
+  {
+    "id": "16",
+    "name": "Amsterdam",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/f4/5f/d9/f45fd956353e94e55586e1cdeba0c67f.jpg",
+    "shortDesc": "Canals, bikes, and culture.",
+    "details": "Amsterdam is known for scenic canals, museums, cycling culture, and historic streets.",
+    "highlights": ["Canal cruises", "Museums", "Cycling", "Historic streets"],
+    "duration": "3–5 days",
+    "price": "₹50,000 – ₹85,000"
+  },
+  {
+    "id": "17",
+    "name": "Ooty",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/7b/ae/65/7bae6584d9d1d737eadefa9b54bd8680.jpg",
+    "shortDesc": "Tea gardens and misty hills.",
+    "details": "Ooty is a charming hill station with cool climate, tea plantations, and scenic views.",
+    "highlights": ["Tea estates", "Toy train", "Lakes", "Hill views"],
+    "duration": "3–5 days",
+    "price": "₹12,000 – ₹25,000"
+  },
+  {
+    "id": "18",
+    "name": "Barcelona",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/5a/71/76/5a717625fd82b9d196bdd29de14a1faf.jpg",
+    "shortDesc": "Art, beaches, and vibrant streets.",
+    "details": "Barcelona blends art, architecture, beaches, and energetic nightlife.",
+    "highlights": ["Sagrada Familia", "Beaches", "Art", "Street life"],
+    "duration": "4–6 days",
+    "price": "₹50,000 – ₹85,000"
+  },
+  {
+    "id": "19",
+    "name": "Andaman Islands",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/e6/ff/a5/e6ffa57c89a17f5b21d86cb122e721ac.jpg",
+    "shortDesc": "Pristine beaches and coral reefs.",
+    "details": "The Andamans offer clear waters, coral reefs, and peaceful island life.",
+    "highlights": ["Snorkeling", "Scuba diving", "Beaches", "Island hopping"],
+    "duration": "4–6 days",
+    "price": "₹25,000 – ₹45,000"
+  },
+  {
+    "id": "20",
+    "name": "Queenstown",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/33/7c/60/337c609a4cccd98b553ea3318ec8b734.jpg",
+    "shortDesc": "Adventure capital of the world.",
+    "details": "Queenstown is famous for adventure sports, lakes, and alpine scenery.",
+    "highlights": ["Bungee jumping", "Lakes", "Skiing", "Adventure sports"],
+    "duration": "5–7 days",
+    "price": "₹65,000 – ₹1,00,000"
+  },
+  {
+    "id": "21",
+    "name": "London",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/14/a3/d0/14a3d017f7165e86db1c2bb660f63ff2.jpg",
+    "shortDesc": "Historic landmarks and modern life.",
+    "details": "London offers iconic landmarks, museums, and diverse cultural experiences.",
+    "highlights": ["Big Ben", "London Eye", "Museums", "City life"],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹90,000"
+  },
+  {
+    "id": "22",
+    "name": "Munnar",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/7f/43/03/7f4303e68af7cee0ee19a1eefad890dc.jpg",
+    "shortDesc": "Rolling hills and tea plantations.",
+    "details": "Munnar is known for lush green hills, tea estates, and cool climate.",
+    "highlights": ["Tea gardens", "Hill views", "Nature walks", "Wildlife"],
+    "duration": "3–5 days",
+    "price": "₹12,000 – ₹28,000"
+  },
+  {
+    "id": "23",
+    "name": "Los Angeles",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/1f/b1/09/1fb109d80fb9f476a091208bfbb2b362.jpg",
+    "shortDesc": "Hollywood glamour and beaches.",
+    "details": "Los Angeles offers entertainment, beaches, and iconic attractions.",
+    "highlights": ["Hollywood", "Beaches", "Theme parks", "Nightlife"],
+    "duration": "5–7 days",
+    "price": "₹70,000 – ₹1,10,000"
+  },
+  {
+    "id": "24",
+    "name": "Kashmir",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/736x/0b/14/b2/0b14b263038ad8d42e722f649b6dca23.jpg",
+    "shortDesc": "Paradise on earth.",
+    "details": "Kashmir is known for its valleys, lakes, gardens, and snow-covered mountains.",
+    "highlights": ["Dal Lake", "Gardens", "Snow views", "Houseboats"],
+    "duration": "5–7 days",
+    "price": "₹22,000 – ₹40,000"
+  },
+  {
+    "id": "25",
+    "name": "Sydney",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/b0/b9/ca/b0b9ca3063c38d49fe133d8b89ab82fd.jpg",
+    "shortDesc": "Harbor city with iconic landmarks.",
+    "details": "Sydney offers beaches, a vibrant city life, and famous landmarks.",
+    "highlights": ["Opera House", "Harbor Bridge", "Beaches", "City views"],
+    "duration": "5–7 days",
+    "price": "₹70,000 – ₹1,10,000"
+  },
+  {
+    "id": "26",
+    "name": "Zermatt",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/3a/1b/9b/3a1b9ba5fa4463d33a16d986ccd9430d.jpg",
+    "shortDesc": "Alpine village beneath the Matterhorn.",
+    "details": "Zermatt offers skiing, alpine scenery, and mountain experiences.",
+    "highlights": ["Matterhorn", "Skiing", "Mountain views", "Cable cars"],
+    "duration": "4–6 days",
+    "price": "₹60,000 – ₹95,000"
+  },
+  {
+    "id": "27",
+    "name": "Miami Beach",
+    "type": "beach",
+    "image": "https://i.pinimg.com/1200x/3a/1b/9b/3a1b9ba5fa4463d33a16d986ccd9430d.jpg",
+    "shortDesc": "Sun, sand, and nightlife.",
+    "details": "Miami Beach is known for vibrant nightlife, beaches, and cultural diversity.",
+    "highlights": ["Beaches", "Nightlife", "Art Deco", "Water sports"],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹90,000"
+  },
+  {
+    "id": "28",
+    "name": "Seoul",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/52/5f/84/525f842ee7ad537c182ee098f8800ba7.jpg",
+    "shortDesc": "Tradition meets technology.",
+    "details": "Seoul blends ancient palaces with modern skyscrapers and pop culture.",
+    "highlights": ["Palaces", "K-culture", "Street food", "Shopping"],
+    "duration": "4–6 days",
+    "price": "₹45,000 – ₹80,000"
+  },
+  {
+    "id": "29",
+    "name": "Darjeeling",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/736x/49/45/30/4945301f60d82e152db8eec541e0b76d.jpg",
+    "shortDesc": "Tea hills and Himalayan views.",
+    "details": "Darjeeling offers tea gardens, toy trains, and mountain views.",
+    "highlights": ["Tea estates", "Toy train", "Sunrise views", "Hill culture"],
+    "duration": "3–5 days",
+    "price": "₹14,000 – ₹30,000"
+  },
+  {
+    "id": "30",
+    "name": "Cape Town",
+    "type": "city",
+    "image": "https://i.pinimg.com/736x/73/8a/15/738a15c155df0458ce0070cf251319e2.jpg",
+    "shortDesc": "Coastal beauty and mountains.",
+    "details": "Cape Town offers beaches, mountains, and cultural attractions.",
+    "highlights": ["Table Mountain", "Beaches", "Winelands", "City views"],
+    "duration": "4–6 days",
+    "price": "₹50,000 – ₹85,000"
+  },
+  {
+    "id": "31",
+    "name": "Nice",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/36/63/0f/36630f077bf5e415547934318b6f3262.jpg",
+    "shortDesc": "French Riviera charm.",
+    "details": "Nice offers Mediterranean beaches, old town charm, and coastal views.",
+    "highlights": ["Beaches", "Old town", "Promenade", "Mediterranean views"],
+    "duration": "3–5 days",
+    "price": "₹45,000 – ₹80,000"
+  },
+  {
+    "id": "32",
+    "name": "Banff",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/d0/85/b2/d085b2dc0f877c06c8496d6604c564a2.jpg",
+    "shortDesc": "Rocky Mountains and turquoise lakes.",
+    "details": "Banff National Park is known for alpine scenery and wildlife.",
+    "highlights": ["Lakes", "Mountains", "Wildlife", "Hiking"],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹90,000"
+  },
+  {
+    "id": "33",
+    "name": "Vienna",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/2e/23/2c/2e232c2f453aa2d1a0493f23f866200c.jpg",
+    "shortDesc": "Classical music and imperial history.",
+    "details": "Vienna offers palaces, classical music, and rich cultural heritage.",
+    "highlights": ["Palaces", "Music", "Museums", "Cafés"],
+    "duration": "3–5 days",
+    "price": "₹45,000 – ₹75,000"
+  },
+  {
+    "id": "34",
+    "name": "Hawaii",
+    "type": "beach",
+    "image": "https://i.pinimg.com/736x/79/6b/aa/796baa61c08f3fd98f207f2c9928a45b.jpg",
+    "shortDesc": "Volcanoes, beaches, and island culture.",
+    "details": "Hawaii offers volcanic landscapes, beaches, and unique island culture.",
+    "highlights": ["Beaches", "Volcanoes", "Surfing", "Island culture"],
+    "duration": "6–8 days",
+    "price": "₹75,000 – ₹1,20,000"
+  },
+  {
+    "id": "35",
+    "name": "Innsbruck",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/736x/05/a6/af/05a6af45d3f9882c13e91cd29fd3e623.jpg",
+    "shortDesc": "Alpine city surrounded by peaks.",
+    "details": "Innsbruck blends city life with alpine scenery and winter sports.",
+    "highlights": ["Mountain views", "Skiing", "Old town", "Cable cars"],
+    "duration": "3–5 days",
+    "price": "₹40,000 – ₹70,000"
+  },
+  {
+    "id": "36",
+    "name": "Singapore",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/76/8b/6a/768b6a635b931896cf5eb43333011a47.jpg",
+    "shortDesc": "Clean, modern, and multicultural.",
+    "details": "Singapore offers futuristic attractions, food culture, and city experiences.",
+    "highlights": ["Marina Bay", "Gardens", "Street food", "Shopping"],
+    "duration": "3–5 days",
+    "price": "₹35,000 – ₹60,000"
+  },
+  {
+    "id": "37",
+    "name": "Nainital",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/736x/8e/2b/94/8e2b943a517014c877bc7f688c5bdad9.jpg",
+    "shortDesc": "Lakes and cool mountain air.",
+    "details": "Nainital is known for its lake, hills, and pleasant climate.",
+    "highlights": ["Lake boating", "Hill views", "Markets", "Nature walks"],
+    "duration": "2–4 days",
+    "price": "₹10,000 – ₹22,000"
+  },
+  {
+    "id": "38",
+    "name": "Ibiza",
+    "type": "beach",
+    "image": "https://i.pinimg.com/1200x/f2/1b/6d/f21b6d5b5e475a6dc476d02f20edd4ab.jpg",
+    "shortDesc": "Party island with stunning beaches.",
+    "details": "Ibiza offers nightlife, beaches, and scenic coastal towns.",
+    "highlights": ["Nightlife", "Beaches", "Clubs", "Sunsets"],
+    "duration": "4–6 days",
+    "price": "₹55,000 – ₹95,000"
+  },
+  {
+    "id": "39",
+    "name": "Prague",
+    "type": "city",
+    "image": "https://i.pinimg.com/1200x/77/74/a8/7774a86be17217f7c1ffbfca258592bd.jpg",
+    "shortDesc": "Fairytale architecture and history.",
+    "details": "Prague offers medieval architecture, historic bridges, and vibrant culture.",
+    "highlights": ["Old Town", "Charles Bridge", "Castles", "Historic streets"],
+    "duration": "3–5 days",
+    "price": "₹40,000 – ₹70,000"
+  },
+  {
+    "id": "40",
+    "name": "Mount Fuji",
+    "type": "mountain",
+    "image": "https://i.pinimg.com/1200x/8b/23/11/8b2311edf1ff0293d24082602777a7eb.jpg",
+    "shortDesc": "Japan’s iconic peak.",
+    "details": "Mount Fuji offers scenic views, hiking routes, and cultural significance.",
+    "highlights": ["Iconic views", "Hiking", "Lakes", "Photography"],
+    "duration": "3–4 days",
+    "price": "₹35,000 – ₹60,000"
+  }
+]
+
