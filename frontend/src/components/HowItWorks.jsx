@@ -1,57 +1,56 @@
 const HowItWorks = () => {
   const steps = [
-    "Explore Destinations",
-    "Choose Your Trip",
-    "Customize Preferences",
-    "Book Securely",
-    "Travel & Enjoy",
-  ];
-
-  const images = [
-    "/images/float1.jpg",
-    "/images/float2.jpg",
-    "/images/float3.jpg",
-    "/images/float4.jpg",
-    "/images/float5.jpg",
-    "/images/float6.jpg",
-    "/images/float7.jpg",
+    { title: "Explore Destinations", img: "/images/float1.jpg" },
+    { title: "Choose Your Trip", img: "/images/float2.jpg" },
+    { title: "Customize Preferences", img: "/images/float3.jpg" },
+    { title: "Book Securely", img: "/images/float4.jpg" },
+    { title: "Travel & Enjoy", img: "/images/float5.jpg" },
   ];
 
   return (
-    <section className="relative py-32 bg-[#020617] overflow-hidden text-white">
+    <section className="relative min-h-[90vh] bg-[#020617] text-white overflow-hidden flex items-center">
 
-      {/* Title */}
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-20">
-        How VoyageX Works
-      </h2>
-
-      {/* Scrolling Words */}
-      <div className="w-full overflow-hidden mb-24">
-        <div className="flex w-max gap-16 text-3xl md:text-4xl font-semibold animate-text-scroll">
-          {[...steps, ...steps].map((step, i) => (
-            <span key={i} className="text-blue-400">
-              {step} ✦
-            </span>
+      {/* BACKGROUND SCROLL TEXT */}
+      <div className="absolute top-20 w-full overflow-hidden opacity-10">
+        <div className="flex gap-20 w-max animate-scroll-x text-6xl font-bold">
+          {[...steps, ...steps].map((s, i) => (
+            <span key={i}>{s.title}</span>
           ))}
         </div>
       </div>
 
-      {/* Image Loop */}
-      <div className="relative h-[420px] flex items-center justify-center">
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt="How it works visual"
-            className="absolute w-[280px] h-[380px] object-cover rounded-2xl shadow-2xl opacity-0"
-            style={{
-              animation: `pop-loop 16s infinite`,
-              animationDelay: `${index * 2}s`,
-            }}
-          />
-        ))}
-      </div>
+      {/* MAIN CONTENT */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
 
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16">
+          How VoyageX Works
+        </h2>
+
+        {/* IMAGE STACK */}
+        <div className="relative h-[420px] flex items-center justify-center">
+          {steps.map((step, index) => (
+            <img
+              key={index}
+              src={step.img}
+              alt={step.title}
+              className="absolute w-[260px] h-[360px] object-cover rounded-3xl shadow-2xl transition-all duration-700"
+              style={{
+                transform: `translateX(${(index - 2) * 120}px) scale(${
+                  index === 2 ? 1 : 0.85
+                })`,
+                opacity: index === 2 ? 1 : 0.4,
+                filter: index === 2 ? "blur(0px)" : "blur(2px)",
+                zIndex: index === 2 ? 10 : 1,
+              }}
+            />
+          ))}
+        </div>
+
+        {/* STEP TEXT */}
+        <p className="mt-12 text-center text-xl text-blue-400 tracking-wide">
+          Explore → Choose → Customize → Book → Travel
+        </p>
+      </div>
     </section>
   );
 };
