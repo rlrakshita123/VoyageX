@@ -24,7 +24,6 @@ const HowItWorks = () => {
   return (
     <section className="bg-[#020617] text-white overflow-hidden">
 
-      {/* TOP SCROLLING TEXT STRIP */}
       <div className="w-full overflow-hidden py-10">
         <div className="flex gap-24 w-max animate-scroll-x text-4xl font-medium text-white/20 px-8">
           {[
@@ -46,11 +45,9 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      {/* MAIN CONTENT */}
       <div className="relative min-h-[75vh] flex items-center">
         <div className="relative z-10 max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-          {/* LEFT TEXT SECTION */}
           <div>
             <p className="text-blue-400 uppercase tracking-widest text-sm mb-4">
               Simple. Fast. Secure.
@@ -83,7 +80,6 @@ const HowItWorks = () => {
             </div>
           </div>
 
-          {/* RIGHT IMAGE POPPING SECTION */}
           <div className="relative h-[420px] flex items-center justify-center">
             {images.map((img, index) => {
               const position = (index - active + images.length) % images.length;
